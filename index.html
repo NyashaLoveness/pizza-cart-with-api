@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "pizza-cart-api.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+
+    <script>
+        axios
+        .get("https://pizza-cart-api.herokuapp.com/api/pizzas")
+        .then((result) =>{
+            console.log(result.data);
+        });
+    </script>
+</head>
+<body>
+   <div x-data = "pizzaCartWithAPIWidget">
+        <div>
+            <h2>Pizza Menu</h2>
+            <template x-for = 'pizza in pizzas'>
+                <div>
+                    <h3 x-text = 'pizza.flavour'></h3>
+                    <div x-text = 'pizza.size'></div>
+                    <h4 x-text = 'pizza.price'></h4>
+                    <button>Buy</button>
+                </div>
+            </template>
+        </div>
+
+   </div> 
+</body>
+</html>
