@@ -32,14 +32,13 @@
             </div>
             <div>
                 <table>
+                    <template x-for = 'pizza in cart.pizzas'>
                     <tr>
                        <th>Flavour</th>
-                            <th>Quantity</th>
-                            <th>Total</th> 
+                        <th>Quantity</th>
+                        <th>Total</th> 
                     </tr>
-                    <template x-for = 'pizza in cart.pizzas'>
                         <tr>
-                            
                             <td x-text = 'pizza.flavour'></td>
                             <td x-text = 'pizza.qty'></td>
                             <td x-text = 'pizza.total'></td>
