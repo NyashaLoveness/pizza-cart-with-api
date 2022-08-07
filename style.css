@@ -1,0 +1,7 @@
+th1 {
+    margin-left: auto;
+    margin-right: auto;
+    column-width: 8em;
+    border: 1px solid;
+    border-collapse: collapse;
+}
