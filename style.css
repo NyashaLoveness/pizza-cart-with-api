@@ -54,3 +54,7 @@ table, th, td {
 .details{
     display: flex; 
 }
+
+.listPizzas{
+    padding-bottom: 3em;
+}
