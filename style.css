@@ -1,7 +1,56 @@
-th1 {
+.primCont{
+    background-color: grey;
+}
+
+.header{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    text-shadow: 3px 3px red;
+    text-decoration: underline;
+}
+
+.customer, .numP, .tot{
+    color: white;
+    padding: 1em;
+}
+
+.details{
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    column-width: 8em;
+    padding: 2.5em;
+    font-size: 18px;
+}
+
+.pic{
+    height: 3.5em;
+}
+
+.add/remove{
+    width: 3em;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    column-width: 10em;
     border: 1px solid;
     border-collapse: collapse;
+    border-color: red;
+    text-align: center;
+    height: 3em;
+    color: white;
+    font-size: 19px;
+}
+.payBtn{
+    background-color: white;
+    border: none;
+    padding: 0.5em;
+    width: 4em;
+}
+
+.details{
+    display: flex; 
 }
