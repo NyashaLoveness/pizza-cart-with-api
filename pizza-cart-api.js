@@ -36,9 +36,11 @@ document.addEventListener('alpine:init', () => {
                 return `./img/${pizza.size}.jpg`
             },
 
+
             message: '',
             username: 'Nyasha Loveness',
             pizzas: [],
+            text: '',
             cartId: '',
             cart: { total: 0 },
             payNow: false,
